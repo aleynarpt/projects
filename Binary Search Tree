@@ -1,0 +1,28 @@
+1) [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+        Binary Root Tree'de verilen dizinin sıralı olduğu kabul edilir ve ilk eleman root olur. Bu dizide root 7'dir.
+        Root baz alınarak dizi ikiye bölünür, 7'den küçükler {5,1,3,6,0,4,2} ve 7'den büyükler {8,9}. Küçükler her zaman sola, büyükler ise sola yazılacaktır. Yazılırken dizideki sıra izlenir.
+
+                      7
+                    /   \
+                   5     8
+
+        Sırayla gidildiğinden şimdi sol yarıdaki sayılar içinde 5'ten küçükler {1,3,0,4,2} 5'in solunda devam ederken, 5ten büyükler {6} sağında devam edecektir.
+        Aynı şekilde 8 için bakıldığında sağ yarıdaki sayılar içinde varsa 8'den küçük olanlar 8'in solunda, 8'den büyük olanlar {9} 8'in sağında devam edecektir.
+
+                     7
+                  /     \
+                 5        8
+               /  \        \
+              1    6        9
+        
+        Kalan her sayı için yukarıdaki kural uygulandığında Binary Search Tree şu şekilde oluşacaktır.
+                     7
+                  /     \
+                 5        8
+               /  \        \
+              1    6        9
+            /   \
+           0     3
+                / \
+               2   4
