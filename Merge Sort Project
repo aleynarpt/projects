@@ -1,0 +1,10 @@
+[16,21,11,8,12,22]  
+1) Yukarıdaki dizinin Merge sort'a göre aşamalarını yazınız.
+        Adım 1: Dizi ortadan bölünür -> [16,21,11]  [8,12,22]
+        Adım 2: Sıralılar tekrar ortadan bölünür -> [16,21] [11]   [8,12] [22]
+        Adım 3: Sıralılar arasında bölünme devam eder -> [16] [21] [11]      [8] [12] [22]
+        Adım 4: Küçükten büyüğe olacak şekilde karşılaştırmalar yapılarak birleşme işlemine başlanır -> [16,21] [11]   [8,12] [22]
+        Adım 5: Küçükten büyüğe karşılaştırma dikkate alınarak birleştirme işlemine devam edilir -> [11,16,21]  [8,12,22]
+        Adım &: Birleşme işlemi sonlandırılır -> [8, 11, 12, 16, 21, 22]
+2) Big-O gösterimini yazınız.
+       Her aşamada yarılama olacağından Big-O Notation'ı O(nlogn) şeklinde olacaktır. Örnek için O(6log6)
